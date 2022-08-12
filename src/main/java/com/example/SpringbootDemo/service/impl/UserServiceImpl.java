@@ -48,7 +48,8 @@ public class UserServiceImpl implements UserService{
 		usr.setUserId(user.getUserId());
 		usr.setTitle(user.getTitle());
 		usr.setBody(user.getBody());
-		return userRepository.save(user);
+	    userRepository.save(user);
+	  return usr;
 	}
 	
 	
