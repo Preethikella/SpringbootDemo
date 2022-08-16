@@ -45,10 +45,10 @@ public class UserServiceImpl implements UserService{
 	@Override
 	public User updateUserById(int id, User user) {
 		User usr=userRepository.findById(id).get();
-		usr.setUserId(user.getUserId());
+	    usr.setUserId(user.getUserId());
 		usr.setTitle(user.getTitle());
 		usr.setBody(user.getBody());
-	    userRepository.save(user);
+	   userRepository.save(user);
 	  return usr;
 	}
 	
